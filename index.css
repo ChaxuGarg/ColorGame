@@ -14,14 +14,73 @@
 
 #container {
   background-color: black;
-  height: 70vh;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
 }
 
 .tile {
-  height: 200px;
-  width: 200px;
+  box-sizing: border-box;
+  height: 15vw;
+  width: 15vw;
   background-color: aliceblue;
+  margin: 3rem 5rem;
+  border-radius: 0.4rem;
+  text-align: center;
+  font-size: 3vh;
+  font-weight: 800;
+  line-height: 3vh;
+  padding-top: 9vh;
+}
+
+.tile:hover{
+  transform: scale(1.02) translateY(-2px);
+    box-shadow: 3px 3px 6px #ffffff;
+    cursor: pointer;
+}
+
+.score-panel{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: white;
+  border-radius: 0.4rem;
+  height: 20vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel{
+  text-align: center;
+  font-size: 22px;
+}
+
+#next{
+  width: 13rem;
+    padding: 0.7rem;
+    font-size: 1.2rem;
+    color: white;
+    background: #3F51B5;
+    border: 0;
+    outline: 0;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: 0.4s;
+    margin: 5px;
+}
+#reset{
+  width: 13rem;
+    padding: 0.7rem;
+    font-size: 1.2rem;
+    color: white;
+    background: #3F51B5;
+    border: 0;
+    outline: 0;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: 0.4s;
+    margin: 5px;
 }
